@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvNombre"
+        android:layout_width="198dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_weight="1"
+        android:text="Nombre(ingles):" />
+
+    <TextView
+        android:id="@+id/tvPoblacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/tvNombre"
+        android:text="Poblacion:" />
+
+    <TextView
+        android:id="@+id/tvnombre2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvNombre"
+        android:layout_marginTop="17dp"
+        android:text="Nombre(castellano):" />
+
+    <TextView
+        android:id="@+id/tvLatitud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvnombre2"
+        android:layout_alignBottom="@+id/tvnombre2"
+        android:layout_toEndOf="@+id/tvNombre"
+        android:text="Latitud:" />
+
+    <TextView
+        android:id="@+id/tvLongitud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvLatitud"
+        android:layout_below="@+id/tvLatitud"
+        android:layout_marginTop="18dp"
+        android:text="Longitud:" />
+
+    <TextView
+        android:id="@+id/tvClave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvLongitud"
+        android:layout_alignParentStart="true"
+        android:text="Clave:" />
+
+    <TextView
+        android:id="@+id/tvCapital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvClave"
+        android:layout_marginTop="23dp"
+        android:text="Capital:" />
+
+    <TextView
+        android:id="@+id/tvContinente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvCapital"
+        android:layout_marginTop="19dp"
+        android:text="Continente:" />
+
+    <TextView
+        android:id="@+id/tvPfronterizos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvCapital"
+        android:layout_alignBottom="@+id/tvCapital"
+        android:layout_alignStart="@+id/tvLongitud"
+        android:text="Paises Fronterizos:" />
+</RelativeLayout>
